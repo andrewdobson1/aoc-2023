@@ -52,7 +52,7 @@ let processFile filepath =
         if (isGameValid validRGB game) then game.Id else 0)
     |> Seq.sum
 
-let file = "AdventOfCode2023/data/day2.txt"
+let file = "data/day2.txt"
 processFile file
 
 

@@ -57,5 +57,5 @@ let processFile filepath =
 let test = [|"two1nine";"eightwothree";"abcone2threexyz";"xtwone3four";"4nineeightseven2";"zoneight234";"7pqrstsixteen"|]
 test |> Seq.map calibrationValue |> Seq.sum
 
-let file = "AdventOfCode2023/data/day1.txt"
+let file = "data/day1.txt"
 processFile file

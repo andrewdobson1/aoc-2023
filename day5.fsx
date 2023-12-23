@@ -123,7 +123,7 @@ humidity-to-location map:
 60 56 37
 56 93 4"""
 
-let file = "AdventOfCode2023/data/day5.txt"
+let file = "data/day5.txt"
     
 let parse lines =
     let maps = lines |> parseMaps

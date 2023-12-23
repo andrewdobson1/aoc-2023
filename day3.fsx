@@ -73,7 +73,7 @@ let sample =
 ...$.*....
 .664.598.."""
 
-let file = "AdventOfCode2023/data/day3.txt"
+let file = "data/day3.txt"
 let parsedSample = sample.SplitOnNewLine() |> parse
 let parsedFile = File.ReadAllLines file |> parse
 
