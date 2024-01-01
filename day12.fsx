@@ -1,7 +1,6 @@
 #load "Common.fsx"
 
 open System
-open System.Collections.Generic
 open System.Linq
         
 let rec calculate (pattern:string,nums) (cache: Map<(string*int list), uint64>) =
@@ -27,8 +26,7 @@ let rec calculate (pattern:string,nums) (cache: Map<(string*int list), uint64>) 
                     else if pattern[damaged] = '#' then (0UL,cache)
                     else calculate (pattern[(damaged+1)..],nums) cache
             | _ -> if nums.Length = 0 then (1UL,cache) else (0UL,cache)
-        let finalCache = updatedCache.Add(key,result)
-        (result,finalCache)      
+        (result, updatedCache.Add(key,result))
         
 let sample =
     """???.### 1,1,3
